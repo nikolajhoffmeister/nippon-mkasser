@@ -1,0 +1,308 @@
+/* Grundstruktur */
+
+body, html {
+    margin: 0; /* Fjerner standard margin */
+    padding: 0; /* Fjerner standard padding */
+ }
+ /* Header */
+ .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #FFFDF5;
+    width: 100%;
+    box-sizing: border-box;
+ }
+ /*logo på haeder*/
+ .logo img {
+    max-height: 120px;
+    padding: 10px 10px;
+ }
+ 
+ /* Navbar */
+ .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1; 
+    justify-content: center;
+ }
+ 
+ .navbar li {
+    flex: 1;
+    margin: 0 42px;
+ }
+ 
+ 
+ .navbar a {
+    display: block;
+    text-decoration: none;
+    padding: 3px 0px;
+    border: 2px solid #CF0300;  /* Rød kant */
+    border-radius: 43px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Skygge */
+    text-align: center;
+    color: #CF0300;
+    width: 100%; 
+    transition: background-color 0.3s;
+    font-family: 'EB Garamond', serif; 
+    font-size: 20px; 
+    font-weight: bold; 
+    background-color: #FFFDF5;
+ 
+ }
+ 
+ .navbar a:hover {
+    background-color: #CF0300; /* Ændre baggrundsfarve ved hover */
+    color: #FFFDF5; /* Ændre tekstfarve ved hover */
+ }
+ 
+ /* Ikoner på header til venster*/
+ .icons {
+    display: flex;
+    margin-right: 50px;
+ }
+ 
+ .icons a {
+    margin-left: 15px;
+ }
+ 
+ .icons img {
+    max-height: 50px;
+    vertical-align: middle;
+ }
+ /*indhold på by selv måltidskasse*/
+ main {
+    padding: 20px;
+    background-color: #FFFDF5;
+    
+ }
+ /*Til de 3 step indicartor*/
+ .steps-container {
+    display: flex;
+    justify-content: space-between; /* Giver lige afstand mellem elementerne */
+    margin-bottom: 50px; /* Lidt afstand under trinene */
+    text-align: center;
+    margin-top: 50px;
+ }
+ /*teksten under de rinde cirkler*/
+ .step-text {
+    color: #CF0300;
+    margin-right: 10px;
+    margin-top: 10px;
+ }
+ .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .step-line {
+    width: 200px; /* Bestem længden af linjen */
+    height: 4px;
+    background-color: black;
+    margin-top: 25px;
+ }
+ .step-indicator {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #CF0300;
+ }
+ 
+ .step-indicator.active {
+    background-color: #CF0300;
+    color: #FFFDF5;
+ }
+ /*Til inholder under step*/
+ .selection {
+    width: 60%; /* Boksen fylder nu 60% af siden */
+    margin: 0 auto; /* Centrerer boksen, så der er luft på begge sider */
+    background-color:#FFFDF5;
+    padding: 20px;
+    border-radius: 43px;
+    border: 25px solid #CF0300; /* Rød kant */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+ }
+ 
+ .main-heading {
+    font-family: 'EB Garamond', serif; /* Du kan ændre fonten her */
+    font-size: 40px; /* Juster størrelsen på teksten */
+    color: black; /* Ændre farven til din foretrukne farve */
+    text-align: center; /* Centrerer teksten */
+    margin-top: 3px; /* Giver lidt afstand under teksten */
+    line-height: 1.5; /* Justerer linjehøjden til at give luft mellem linjer */
+ }
+ 
+ /* Opskriftsbokse */
+ .recipe-boxes {
+    display: flex;
+    flex-direction: column; /* Stabler kasserne vertikalt */
+    align-items: center; /* Centrerer kasserne horisontalt */
+    margin-top: 20px; /* Afstand over bokse */
+ }
+ 
+ .recipe-box {
+    position: relative; /* Gør det muligt at placere plus-tegnet relativt */
+    display: flex;
+    background-color: #CF0300; /* Baggrundsfarve */
+    border-radius: 43px; /* Runde kanter */
+    width: 90%; /* Justér bredden efter behov */
+    height: 250px;
+    margin-bottom: 25px; /* Afstand mellem kasserne */
+    overflow: hidden; /* Forhindrer indhold i at overskride kassen */
+    text-align: left;
+ }
+ 
+ .plus-button {
+    position: absolute; /* Gør det muligt at placere knappen i øverste højre hjørne */
+    top: 25px; /* Afstand fra toppen */
+    right: 25px; /* Afstand fra højre */
+    width: 22px; /* Diameter på cirklen */
+    height: 22px; /* Diameter på cirklen */
+    background-color: #CF0300; /* Baggrundsfarve for knappen */
+    border-radius: 50%; /* Cirkelformet */
+    border: 2px solid #FFFDF5;
+    display: flex;
+    align-items: center; /* Centrerer indholdet vertikalt */
+    justify-content: center; /* Centrerer indholdet horisontalt */
+    color: #FFFDF5; /* Farven på plus-tegnet */
+    font-size: 22px; /* Størrelse på plus-tegnet */
+    cursor: pointer; /* Musen ændres til en hånd ved hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Skyggeeffekt */
+    transition: background-color 0.3s; /* Overgangseffekt */
+ }
+ 
+ .plus-button:hover, .plus-button.active {
+    background-color: #f1f1f1; /* Ændrer baggrundsfarven ved hover */
+    color: #CF0300;
+ }
+ 
+ .recipe-image {
+    width: 20%; /* Billede tager 30% af boksen */
+    margin: 20px 20px;
+ }
+ 
+ .recipe-text {
+    padding: 20px; /* Indre afstand */
+    color: white; /* Tekstfarve */
+    display: flex;
+    flex-direction: column; /* Stabler overskrift og brødtekst */
+    justify-content: center; /* Centrerer tekst vertikalt */
+    width: 65%; /* Justér bredden efter behov */
+ }
+ 
+ .recipe-text h2 {
+    margin: 0; /* Fjerner margin for overskriften */
+    font-size: 30px; /* Justér fontstørrelse efter behov */
+ }
+ 
+ .recipe-text p {
+    margin: 10px 0 0; /* Margin for brødteksten */
+    font-size: 18px; /* Justér fontstørrelse efter behov */
+    line-height: 1.6;
+ }
+ 
+ 
+ /*instiling til knap for gå vider til næste side*/
+ .submit-button {
+    padding: 10px 80px;
+    background-color: #CF0300;
+    color: white;
+    border: none;
+    border-radius: 43px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 25px;
+    font-family: 'EB Garamond';
+    text-decoration: none;
+    margin-top: 80px !important;
+ }
+ /* Footer Container */
+ .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CF0300; /* Rød baggrund */
+    padding: 40px;
+    color: white;
+    flex-wrap: wrap;
+ }
+ 
+ /* Nyhedsbrev sektion */
+ .newsletter h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+ }
+ 
+ .newsletter input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+ }
+ 
+ .newsletter .submit-btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: #d32f2f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ 
+ /* Kontaktinfo sektion */
+ .contact-info p {
+    font-size: 14px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+ }
+ 
+ .contact-info .icon {
+    margin-right: 10px;
+    font-size: 16px;
+ }
+ 
+ /* Sociale ikoner sektion */
+ .social-icons {
+    display: flex;
+    gap: 15px;
+ }
+ 
+ .social-icons a img {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+ }
+ 
+ /* Juridisk sektion */
+ .legal {
+    text-align: left;
+    font-size: 14px;
+ }
+ 
+ .legal a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+ }
+ 
+ .legal p {
+    margin: 5px 0;
+ }
+ 
+ .legal a:hover {
+    text-decoration: underline;
+ }
+ 

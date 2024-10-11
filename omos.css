@@ -1,0 +1,284 @@
+body, html {
+   margin: 0; /* Fjerner standard margin */
+   padding: 0; /* Fjerner standard padding */
+}
+
+.header-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 20px;
+   background-color: #FFFDF5;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+.logo img {
+   max-height: 120px;
+   padding: 10px 10px;
+}
+
+/* Navbar */
+.navbar {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-grow: 1; 
+   justify-content: center;
+}
+
+.navbar li {
+   flex: 1;
+   margin: 0 42px;
+}
+
+
+.navbar a {
+   display: block;
+   text-decoration: none;
+   padding: 3px 0px;
+   border: 2px solid #CF0300;  /* Rød kant */
+   border-radius: 43px; 
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Skygge */
+   text-align: center;
+   color: #CF0300;
+   width: 100%; 
+   transition: background-color 0.3s;
+   font-family: 'EB Garamond', serif; 
+   font-size: 20px; 
+   font-weight: bold; 
+   background-color: #FFFDF5;
+
+}
+
+.navbar a:hover {
+   background-color: #CF0300; /* Ændre baggrundsfarve ved hover */
+   color: #FFFDF5; /* Ændre tekstfarve ved hover */
+}
+
+/* Ikoner */
+.icons {
+   display: flex;
+   margin-right: 50px;
+}
+
+.icons a {
+   margin-left: 15px;
+}
+
+.icons img {
+   max-height: 50px;
+   vertical-align: middle;
+}
+
+
+
+
+
+* Grundstruktur */
+body, html {
+   margin: 0; /* Fjerner standard margin */
+   padding: 0; /* Fjerner standard padding */
+}
+
+.header-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 20px;
+   background-color: #FFFDF5;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+.logo img {
+   max-height: 120px;
+   padding: 10px 10px;
+}
+
+/* Navbar */
+.navbar {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-grow: 1; 
+   justify-content: center;
+}
+
+.navbar li {
+   flex: 1;
+   margin: 0 42px;
+}
+
+
+.navbar a {
+   display: block;
+   text-decoration: none;
+   padding: 3px 0px;
+   border: 2px solid #CF0300;  /* Rød kant */
+   border-radius: 43px; 
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Skygge */
+   text-align: center;
+   color: #CF0300;
+   width: 100%; 
+   transition: background-color 0.3s;
+   font-family: 'EB Garamond', serif; 
+   font-size: 20px; 
+   font-weight: bold; 
+   background-color: #FFFDF5;
+
+}
+
+.navbar a:hover {
+   background-color: #CF0300; /* Ændre baggrundsfarve ved hover */
+   color: #FFFDF5; /* Ændre tekstfarve ved hover */
+}
+
+/* Ikoner */
+.icons {
+   display: flex;
+   margin-right: 50px;
+}
+
+.icons a {
+   margin-left: 15px;
+}
+
+.icons img {
+   max-height: 50px;
+   vertical-align: middle;
+}
+
+
+body, html {
+   margin: 0;
+   padding: 0;
+   font-family: 'EB Garamond', serif;
+   background-color: #FFFDF5; /* Lys baggrund */
+}
+
+.about-container {
+   background-color: #CF0300; /* Rød baggrund */
+   padding: 40px;
+   border-radius: 25px; /* Runde hjørner på containeren */
+   max-width: 800px;
+   margin: 50px auto; /* Centrer containeren på siden */
+   color: #FFFDF5;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Let skygge for dybde */
+   text-align: center;
+}
+
+.about-container h2 {
+   margin-bottom: 20px;
+   font-size: 36px;
+}
+
+.about-container .content {
+   margin: initial;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+   text-align: center;
+   display: -webkit-inline-box;
+}
+
+
+.about-container img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 43px; /* Runde hjørner på billedet */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Let skygge for billedet */
+}
+
+.about-container p {
+   text-align: justify;
+   font-size: 20px;
+   line-height: 1.5;
+   max-width: 400px;
+}
+
+
+
+
+/* Footer Container */
+.footer-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #d32f2f; /* Rød baggrund */
+   padding: 40px;
+   color: white;
+   flex-wrap: wrap;
+}
+
+/* Nyhedsbrev sektion */
+.newsletter h2 {
+   font-size: 18px;
+   margin-bottom: 10px;
+}
+
+.newsletter input {
+   padding: 10px;
+   width: 200px;
+   margin-right: 10px;
+   border: none;
+   border-radius: 5px;
+}
+
+.newsletter .submit-btn {
+   padding: 10px 20px;
+   background-color: white;
+   color: #d32f2f;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+/* Kontaktinfo sektion */
+.contact-info p {
+   font-size: 14px;
+   margin: 5px 0;
+   display: flex;
+   align-items: center;
+}
+
+.contact-info .icon {
+   margin-right: 10px;
+   font-size: 16px;
+}
+
+/* Sociale ikoner sektion */
+.social-icons {
+   display: flex;
+   gap: 15px;
+   
+}
+
+.social-icons a img {
+   width: 25px;
+   height: 25px;
+   filter: invert(100%);
+}
+
+/* Juridisk sektion */
+.legal {
+   text-align: left;
+   font-size: 14px;
+}
+
+.legal a {
+   color: white;
+   text-decoration: none;
+   margin: 0 5px;
+}
+
+.legal p {
+   margin: 5px 0;
+}
+
+.legal a:hover {
+   text-decoration: underline;
+}

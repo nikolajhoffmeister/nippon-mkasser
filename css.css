@@ -1,0 +1,379 @@
+/* header*/
+body, html {
+    margin: 0; /* Fjerner standard margin */
+    padding: 0; /* Fjerner standard padding */
+    background-color: #FFFDF5;
+ }
+ 
+ .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #FFFDF5;
+    width: 100%;
+    box-sizing: border-box;
+ }
+ 
+ .logo img {
+    max-height: 120px;
+    padding: 10px 10px;
+ }
+ 
+ /* Navbar */
+ .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1; 
+    justify-content: center;
+ }
+ 
+ .navbar li {
+    flex: 1;
+    margin: 0 42px;
+ }
+ 
+ 
+ .navbar a {
+    display: block;
+    text-decoration: none;
+    padding: 3px 0px;
+    border: 2px solid #CF0300;  /* Rød kant */
+    border-radius: 43px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Skygge */
+    text-align: center;
+    color: #CF0300;
+    width: 100%; 
+    transition: background-color 0.3s;
+    font-family: 'EB Garamond', serif; 
+    font-size: 20px; 
+    font-weight: bold; 
+    background-color: #FFFDF5;
+ 
+ }
+ 
+ .navbar a:hover {
+    background-color: #CF0300; /* Ændre baggrundsfarve ved hover */
+    color: #FFFDF5; /* Ændre tekstfarve ved hover */
+ }
+ 
+ /* Ikoner */
+ .icons {
+    display: flex;
+    margin-right: 50px;
+ }
+ 
+ .icons a {
+    margin-left: 15px;
+ }
+ 
+ .icons img {
+    max-height: 50px;
+    vertical-align: middle;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*forside*/
+ 
+ :root {
+    --primary-color: #cf0300; 
+    --accent-color: #fff8e8; 
+    --text-color: #cf0300;
+    --font-main: 'eb garamond', sans-serif; 
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+  }
+  
+  body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  .forside {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .logo-nippon {
+    height: 50px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover, nav ul li a.active {
+    color: var(--primary-color);
+  }
+  
+  .ikon-nippon, .ikon-nippon-2 {
+    height: 30px;
+  }
+  
+ /* Root laver en variabel af de primære farver*/
+  :root {
+    --primary-color: #CF0300; 
+    --text-color: #333333;
+    --background-color: #FFFDF5;
+ }
+ 
+ /* Sørger for alt indhold er på lige linje*/
+ .hero {
+    padding: 50px 0;
+    background-color: var(--background-color);
+ }
+ 
+ h1, h2, h3 {
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+ }
+ 
+ h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+ }
+ 
+ h2 {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+ }
+ 
+ h3 {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+ }
+ 
+ /* Indholdet inde i heroen*/
+ .hero-content {
+    display: flex;
+    align-items: stretch; 
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ /* wrap til cta-knappen */
+ .wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+ }
+ 
+ .maltiskasse-medlogo {
+    width: 70%; 
+    object-fit: cover;
+    height: 100%; 
+    order: 2;
+    align-items: center
+ }
+ 
+ 
+ /* Teksten inde i heroen*/
+ .hero-text {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    order: 1;
+    font-family: 'EB Garamond', serif;
+ 
+ 
+ }
+ 
+ .hero-text p {
+    margin-bottom: 30px;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--primary-color);
+    justify-content: center;
+    
+    
+ }
+ 
+ /* Container til cta-knappen*/
+ .cta-container {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    
+ }
+ 
+ .cta-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 43px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    display: inline-block;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(48, 44, 44, 0.1);
+    font-family: 'EB Garamond', serif;
+    align-items: center;
+    width: 20%
+ }
+ 
+ .cta-button:hover {
+    background-color: #B22A23;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+ }
+ 
+ /* Responsive design */
+ @media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+ 
+    .maltiskasse-medlogo,
+    .hero-text {
+        width: 100%;
+        order: 0;
+    }
+ 
+    .hero-text {
+        text-align: center;
+    }
+ 
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 1em;
+    }
+ }
+  /* footer og sociale meider ikoner */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d32f2f; 
+    padding: 40px;
+    color: white;
+    flex-wrap: wrap;
+ }
+ 
+ /* Nyhedsbrev sektion */
+ .newsletter h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'EB Garamond', serif;
+ 
+ }
+ 
+ .newsletter input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+ }
+ 
+ .newsletter .submit-btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: #d32f2f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'EB Garamond', serif;
+ 
+ }
+ 
+ /* Kontaktinfo sektion */
+ .contact-info p {
+    font-size: 14px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    font-family: 'EB Garamond', serif;
+ 
+ }
+ 
+ .contact-info .icon {
+    margin-right: 10px;
+    font-size: 16px;
+    font-family: 'EB Garamond', serif;
+ 
+ }
+ 
+ /* Sociale ikoner sektion */
+ .social-icons {
+    display: flex;
+    gap: 15px;
+ }
+ 
+ .social-icons a img {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+ }
+ 
+ /* Juridisk sektion */
+ .legal {
+    text-align: left;
+    font-size: 14px;
+ }
+ 
+ .legal a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    font-family: 'EB Garamond', serif;
+ 
+ }
+ 
+ .legal p {
+    margin: 5px 0;
+    font-family: 'EB Garamond', serif;
+ 
+ }
+ 
+ .legal a:hover {
+    text-decoration: underline;
+ }
+ 

@@ -1,0 +1,326 @@
+/* Grundstruktur */
+
+body, html {
+   margin: 0; /* Fjerner standard margin */
+   padding: 0; /* Fjerner standard padding */
+}
+/* Header */
+.header-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 20px;
+   background-color: #FFFDF5;
+   width: 100%;
+   box-sizing: border-box;
+}
+/*logo på haeder*/
+.logo img {
+   max-height: 120px;
+   padding: 10px 10px;
+}
+
+/* Navbar */
+.navbar {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-grow: 1; 
+   justify-content: center;
+}
+
+.navbar li {
+   flex: 1;
+   margin: 0 42px;
+}
+
+
+.navbar a {
+   display: block;
+   text-decoration: none;
+   padding: 3px 0px;
+   border: 2px solid #CF0300;  /* Rød kant */
+   border-radius: 43px; 
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Skygge */
+   text-align: center;
+   color: #CF0300;
+   width: 100%; 
+   transition: background-color 0.3s;
+   font-family: 'EB Garamond', serif; 
+   font-size: 20px; 
+   font-weight: bold; 
+   background-color: #FFFDF5;
+
+}
+
+.navbar a:hover {
+   background-color: #CF0300; /* Ændre baggrundsfarve ved hover */
+   color: #FFFDF5; /* Ændre tekstfarve ved hover */
+}
+
+/* Ikoner på header til venster*/
+.icons {
+   display: flex;
+   margin-right: 50px;
+}
+
+.icons a {
+   margin-left: 15px;
+}
+
+.icons img {
+   max-height: 50px;
+   vertical-align: middle;
+}
+
+/*indhold på by selv måltidskasse*/
+main {
+   padding: 20px;
+   background-color: #FFFDF5;
+   
+}
+/*Til de 3 step indicartor*/
+.steps-container {
+   display: flex;
+   justify-content: space-between; /* Giver lige afstand mellem elementerne */
+   margin-bottom: 50px; /* Lidt afstand under trinene */
+   text-align: center;
+   margin-top: 50px;
+}
+/*teksten under de rinde cirkler*/
+.step-text {
+   color: #CF0300;
+   margin-right: 10px;
+   margin-top: 10px;
+}
+.step {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.step-line {
+   width: 200px; /* Bestem længden af linjen */
+   height: 4px;
+   background-color: black;
+   margin-top: 25px;
+}
+.step-indicator {
+   width: 50px;
+   height: 50px;
+   border: 2px solid black;
+   border-radius: 43px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 10px;
+   font-weight: bold;
+   font-size: 20px;
+   color: #CF0300;
+}
+
+.step-indicator.active {
+   background-color: #CF0300;
+   color: #FFFDF5;
+}
+/*Til inholder under step*/
+.selection {
+   width: 60%; /* Boksen fylder nu 60% af siden */
+   margin: 0 auto; /* Centrerer boksen, så der er luft på begge sider */
+   background-color:#FFFDF5;
+   padding: 20px;
+   border-radius: 43px;
+   border: 25px solid #CF0300; /* Rød kant */
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   text-align: center;
+}
+/*Linje der opdeler valgmulighedderne*/
+.separator {
+   border: none; /* Fjerner standard kant */
+   height: 3px; /* Højden på linjen */
+   width: 90%;
+   background-color: black; /* Farven på linjen */
+   margin: 30px auto; /* Juster afstand før og efter linjen */
+}
+.option {
+   display: flex; /* Brug flexbox for at placere overskriften og knapperne side om side */
+   justify-content: space-between; /* Giver plads mellem elementerne */
+   align-items: center; /* Justerer elementerne vertikalt */
+   margin-bottom: 20px;
+   margin-right: 50px;
+   
+}
+.option label {
+   flex: 1; /* Gør overskriften til venstre fleksibel */
+   text-align: left; /* Sikrer at teksten står til venstre */
+   font-size: 25px;
+   margin-bottom: 10px;
+   margin-left: 50px;
+   font-family: 'EB Garamond';
+   font-style:inherit;
+   font-size: 40px;
+}
+.number-options button, .meal-options button {
+   margin-bottom: 10px; /* Mellemrum mellem knapperne */
+   font-size: 40px;
+   font-family: 'EB Garamond';
+   font-style: bold;
+}
+.number-options, .meal-options {
+   display: flex; /* Beholder knapperne i en linje */
+   gap: 10px; /* Afstand mellem knapperne */
+   flex: 1; /* Gør knapområdet fleksibelt */
+   justify-content: flex-end; /* Justerer knapperne til højre */
+}
+
+/*Ikon insteling til perfarancer og alagi*/
+.preference-options, .allergy-options {
+   display: flex;
+   gap: 50px; /* Afstand mellem ikonerne */
+   justify-content: center; /* Centrerer ikonerne */
+}
+
+.icon-option {
+   display: flex;
+   flex-direction: column; /* Placerer ikon og tekst i en kolonne */
+   align-items: center; /* Centrerer indholdet */
+   text-decoration: none; /* Fjerner underline fra links */
+   color: black; /* Ændrer tekstfarven */
+   transition: transform 0.3s;
+}
+.icon-option img {
+   max-height: 140px; /* Juster højden på ikonerne */
+}
+.icon-option:hover {
+   transform: scale(1.1); /* Forstørrer ikonet ved hover */
+}
+.icon-option span {
+   margin-top: 5px; /* Afstand mellem ikon og tekst */
+   font-family:'EB Garamond'serif;
+   font-style: bold;
+   font-size: 20px;
+}
+
+/* Ny stil til valgte ikoner */
+.icon-option.active {
+   border: 3px solid #CF0300; /* Rød kant omkring det valgte ikon */
+   border-radius: 20px; /* Giver afrundede hjørner på ikonet */
+   padding: 10px;
+}
+
+/*indtling for knapper ved valg antal*/
+button {
+   border: 3px solid black;
+   border-radius: 33px;
+   padding: 25px 30px;
+   background-color: #FFFDF5;
+   color: #CF0300;
+   cursor: pointer;
+   transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+   border: 3px solid #CF0300; /* Rød kant omkring det valgte ikon */
+   border-radius: 33px; /* Giver afrundede hjørner på ikonet */
+ 
+}
+/*når jeg kilkker bliver den denne css*/
+button.active {
+   border: 5px solid #CF0300; /* Rød kant omkring det valgte ikon */
+   border-radius: 33px; /* Giver afrundede hjørner på ikonet */
+}
+/*instiling til knap for gå vider til næste side*/
+.submit-button {
+   margin-top: 40px;
+   padding: 10px 80px;
+   background-color: #CF0300;
+   color: white;
+   border: none;
+   border-radius: 43px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   font-size: 25px;
+   font-family: 'EB Garamond';
+   font-style: bold;
+   text-decoration: none;
+}
+
+/* Footer Container */
+.footer-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #CF0300; /* Rød baggrund */
+   padding: 40px;
+   color: white;
+   flex-wrap: wrap;
+}
+
+/* Nyhedsbrev sektion */
+.newsletter h2 {
+   font-size: 18px;
+   margin-bottom: 10px;
+}
+
+.newsletter input {
+   padding: 10px;
+   width: 200px;
+   margin-right: 10px;
+   border: none;
+   border-radius: 5px;
+}
+
+.newsletter .submit-btn {
+   padding: 10px 20px;
+   background-color: white;
+   color: #d32f2f;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+/* Kontaktinfo sektion */
+.contact-info p {
+   font-size: 14px;
+   margin: 5px 0;
+   display: flex;
+   align-items: center;
+}
+
+.contact-info .icon {
+   margin-right: 10px;
+   font-size: 16px;
+}
+
+/* Sociale ikoner sektion */
+.social-icons {
+   display: flex;
+   gap: 15px;
+}
+
+.social-icons a img {
+   width: 25px;
+   height: 25px;
+   filter: invert(100%);
+}
+
+/* Juridisk sektion */
+.legal {
+   text-align: left;
+   font-size: 14px;
+}
+
+.legal a {
+   color: white;
+   text-decoration: none;
+   margin: 0 5px;
+}
+
+.legal p {
+   margin: 5px 0;
+}
+
+.legal a:hover {
+   text-decoration: underline;
+}
+

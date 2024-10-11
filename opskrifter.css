@@ -1,0 +1,267 @@
+body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #FFFDF5;
+}
+
+main {
+    flex: 1;
+}
+
+.rectangle-div {
+    width: 300px;  /* Set width to 300 pixels */
+    height: 517px; /* Set height to 517 pixels */
+    margin: 2%;  /* Optional: Add some space between the divs */
+    position: relative;
+    border-radius: 43px;
+    background-color: #cf0300;
+    height: 517px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-ikoner {
+    display: flex;
+    top: 90px; /* or absolute, depending on your layout needs */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 140px;  
+}
+
+.container-rectangle {
+    display: flex; /* or absolute, depending on your layout needs */
+    top: 170px;
+    flex-wrap: wrap;
+    justify-content: center;
+    color:#FFFDF5;
+    margin: 20px; 
+}
+
+ 
+/* Tofu opskrift */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.recipe-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #FFFDF5;
+    padding: 20px;
+    border: 30px solid #CF0300;
+    border-radius: 43px;
+}
+
+.recipe-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.ingredients {
+    flex-basis: 50%;
+}
+
+.ingredients ul {
+    list-style: none;
+}
+
+.recipe-image img {
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.instructions {
+    margin-top: 30px;
+}
+
+.instructions h2 {
+    color: #CF0300;
+}
+
+
+
+body, html {
+    margin: 0; /* Fjerner standard margin */
+    padding: 0; /* Fjerner standard padding */
+ }
+ /* Header */
+ .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #FFFDF5;
+    width: 100%;
+    box-sizing: border-box;
+ }
+ /*logo på haeder*/
+ .logo img {
+    max-height: 120px;
+    padding: 10px 10px;
+ }
+ 
+ 
+ /* Navbar */
+ .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+ }
+ 
+ 
+ .navbar li {
+    flex: 1;
+    margin: 0 42px;
+ }
+ 
+ 
+ 
+ 
+ .navbar a {
+    display: block;
+    text-decoration: none;
+    padding: 3px 0px;
+    border: 2px solid #CF0300;  /* Rød kant */
+    border-radius: 43px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Skygge */
+    text-align: center;
+    color: #CF0300;
+    width: 100%;
+    transition: background-color 0.3s;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+   
+ }
+ 
+ 
+ .navbar a:hover {
+    background-color: #CF0300; /* Ændre baggrundsfarve ved hover */
+    color: #FFFDF5; /* Ændre tekstfarve ved hover */
+ }
+ 
+ 
+ 
+ 
+ /* Ikoner på header til venster*/
+ .icons {
+    display: flex;
+    margin-right: 50px;
+ }
+ 
+ 
+ .icons a {
+    margin-left: 15px;
+ }
+ 
+ 
+ .icons img {
+    max-height: 50px;
+    vertical-align: middle;
+ }
+ 
+
+
+
+ /* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d32f2f; /* Rød baggrund */
+    padding: 40px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+/* Nyhedsbrev sektion */
+.newsletter h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter .submit-btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: #d32f2f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Kontaktinfo sektion */
+.contact-info p {
+    font-size: 14px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info .icon {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Sociale ikoner sektion */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a img {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+}
+
+/* Juridisk sektion */
+.legal {
+    text-align: left;
+    font-size: 14px;
+}
+
+.legal a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.legal p {
+    margin: 5px 0;
+}
+
+.legal a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, p, li {
+    font-family: 'EB Garamond', seriff ;
+}
+
+a{
+   text-decoration: none; 
+   color: #FFFDF5;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Nippon</title>
+   <link rel="iconWeb" href="img/Logo_web.png" type="img/icon">
+   <link rel="stylesheet" href="bygselv2.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
+   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="icon" href="img/Logo_web.png" type="image/x-icon">
+
+</head>
+
+<body>
+   <header>
+       <nav class="header-container">
+           <!-- Logo -->
+           <div class="logo">
+               <a href="index.html">
+                   <img src="img/Logo.png" alt="Logo" />
+               </a>
+           </div>
+
+           <!-- Navbar -->
+           <ul class="navbar">
+               <li><a href="bygselv.html">Måltidskasser</a></li>
+               <li><a href="opskrifter.html">Opskrifter</a></li>
+               <li><a href="omos.html">Om os</a></li>
+           </ul>
+
+           <!-- Icons -->
+           <div class="icons">
+               <a href="#kasse"><img src="img/ikonK.png" alt="Kurv"></a>
+               <a href="login.html"><img src="img/ikonLogind.png" alt="Login"></a>
+           </div>
+       </nav>
+   </header>
+   <main>
+       <section id="meal-selection">
+           <div class="selection">
+   
+           <div class="steps-container">
+               <div class="step">
+                   <div class="step-indicator">1</div>
+                   <span class="step-text">Vælg <br> måltidskasser</span>
+               </div>
+
+               <div class="step-line"></div> <!-- Tilføj en linje her -->
+
+               <div class="step">
+                   <div class="step-indicator active">2</div>
+                   <span class="step-text">Vælg <br> opskrifter</span>
+               </div>
+               
+               <div class="step-line"></div> <!-- Tilføj en linje her -->
+
+               <div class="step">
+                   <div class="step-indicator">3</div>
+                   <span class="step-text">Levering <br> og betaling</span>
+               </div>
+           </div>
+           
+
+           <h1 class="main-heading">Vælg opskrifter til din <br> måltidskasse</h1>
+           <section class="recipe-boxes">
+               <div class="recipe-box">
+                   <div class="plus-button" onclick="changeColor(this)">+</div>
+                   <img src="img/rejer.png" alt="Rejer" class="recipe-image">
+                   <div class="recipe-text">
+                       <h2>Stegte rejer</h2>
+                       <p>Stegte rejer med hvidløg og citron er en enkel og lækker ret, hvor store rejer steges i olivenolie sammen med hvidløg. Rejerne får en frisk smag fra citronsaft og toppes med hakket persille. Retten er perfekt som forret eller en del af et måltid og tager kun få minutter at lave.</p>
+                   </div>
+               </div>
+               <div class="recipe-box">
+                   <div class="plus-button" onclick="changeColor(this)">+</div>
+                   <img src="img/hummer.png" alt="Hummer" class="recipe-image">
+                   <div class="recipe-text">
+                       <h2>Hummer Suppe</h2>
+                       <p>Hummersuppe er en cremet og fyldig suppe med smag af frisk hummer, fløde og urter. Den tilberedes med en base af hummerfond og sauteres grøntsager som løg og gulerødder for ekstra smag. Perfekt til særlige lejligheder, toppet med hummerkød og et drys friske krydderurter</p>
+                   </div>
+               </div>
+               <div class="recipe-box">
+                   <div class="plus-button" onclick="changeColor(this)">+</div>
+                   <img src="img/sushi.png" alt="sushi" class="recipe-image">
+                   <div class="recipe-text">
+                       <h2>Sushi</h2>
+                       <p>Sushi er en japansk ret bestående af ris krydret med eddike, serveret med frisk fisk, skaldyr eller grøntsager. Den kan formes som nigiri (ris med topping), rulles som maki, eller serveres som sashimi uden ris. Sushi er kendt for sin friske smag, balance og smukke præsentation.</p>
+                   </div>
+               </div>
+               <div class="recipe-box">
+                   <div class="plus-button" onclick="changeColor(this)">+</div>
+                   <img src="img/ris.png" alt="ris" class="recipe-image">
+                   <div class="recipe-text">
+                       <h2>Stegte rejer med ris</h2>
+                       <p>Rejer med ris og æg er en smagfuld og enkel ret, hvor stegte rejer serveres over ris blandet med røræg. Æggene giver retten en cremet konsistens, mens hvidløg, citronsaft og friske urter tilføjer ekstra smag. Den er hurtig at lave og passer perfekt til en let middag.</p>
+                   </div>
+               </div>
+           </section>
+           
+           
+               <!-- Knappen til at gå til opskrifter -->
+               <a href="bygselv2.html" class="submit-button" onclick="showAlert()">Gå til betaling og levering</a>
+
+           </div>
+           <script>
+               function showAlert() {
+                   alert("Du bliver nu sendt videre til betaling og levering.");
+               }
+           </script>
+           
+           
+       </section>
+   </main>
+   <footer>
+       <div class="footer-container">
+           <!-- Kontaktoplysninger sektion (nu først) -->
+           <div class="contact-info">
+               <p><i class="fas fa-envelope icon"></i> Nippon@mail.com</p>
+               <p><i class="fas fa-phone icon"></i> 45 30 78 45</p>
+               <p><i class="fas fa-map-marker-alt icon"></i> Møllevej 22, Aarhus C. 8000</p>
+           </div>
+   
+           <!-- Nyhedsbrev sektion (nu nederst) -->
+           <div class="newsletter">
+               <h2>Tilmeld Nyhedsbrev</h2>
+               <form>
+                   <input type="email" placeholder="Nippon@mail.dk" required>
+                   <button type="submit" class="submit-btn">Tilmeld</button>
+               </form>
+           </div>
+   
+           <!-- Juridisk sektion (flyttet op) -->
+       <div class="legal">
+           <p>CVR: 31677971</p>
+           <a href="#">Privat politik</a>
+           <a href="#">Cookies</a>
+           <p>&copy; 2024 Nippon ApS. Alle rettigheder forbeholdes.</p>
+       </div>
+
+       <!-- Sociale medier (flyttet ned) -->
+       <div class="social-icons">
+           <a href="#"><img src="img/youtube.png" alt="YouTube"></a>
+           <a href="#"><img src="img/tiktok.png" alt="TikTok"></a>
+           <a href="#"><img src="img/insta.png" alt="Instagram"></a>
+           <a href="#"><img src="img/fb.png" alt="Facebook"></a>
+       </div>
+   </div>
+   </footer>
+   <script src="bygselv2.js"></script>
+</body>
+</html>
